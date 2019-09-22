@@ -1,0 +1,18 @@
+<h3>Станции отсортированы по {{sortType}}</h3>
+
+<table>
+    <tr>
+        <th>Название</th>
+        <th>Тип станции</th>
+        <th>Координаты</th>
+        <th>Адрес</th>
+    </tr>
+    {{#each stationsData as |station|}} 
+        <tr>
+            <td>{{station.name}}</td>
+            <td>{{station.typeName}}</td>
+            <td>{{station.lat}}, {{station.lng}}</td>
+            <td>{{station.address}}</td>
+        </tr>
+    {{/each}}
+</table>
